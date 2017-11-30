@@ -1,38 +1,101 @@
-To install and create new react :
+# Create React App (Automatically)
+
+1- Install it once globally:
+
+You’ll need to have Node >= 6 on your machine. You can use nvm (macOS/Linux) or nvm-windows to
+
+ easily switch Node versions between different projects.
+
 
 ```
-https://reactjs.org/docs/installation.html
+npm install -g create-react-app
 
 ```
-
-
-yarn add serve
-
-yarn serve (to run)
-
-chrome.google.com -> react developer tools
-
-yarn add webpack --dev
-
-yarn add babel-loader babel-core babel-preset-react-app --dev
-
-yarn add cross-env --dev
-
-yarn run build
-
-yarn add webpack-dev-server --dev
-
-yarn add react react-dom
-
-add following  code in to package.json or in to a hidden file called : .babelrc
+2- To create a new app, run:
 
 ```
- "babel": {
-  "presets": ["react-app"]
+create-react-app my-app
+
+cd my-app
 
 ```
 
---------------------------------------------------------------------------
+It will create a directory called my-app inside the current folder.
+
+Inside that directory, it will generate the initial project structure and install the
+
+transitive dependencies:
+
+```
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   └── favicon.ico
+│   └── index.html
+│   └── manifest.json
+└── src
+    └── App.css
+    └── App.js
+    └── App.test.js
+    └── index.css
+    └── index.js
+    └── logo.svg
+    └── registerServiceWorker.js
+
+```
+
+3- Runs the app in development mode.
+
+Open http://localhost:3000 to view it in the browser.
+
+```
+npm start or yarn start
+
+```
+
+4- Runs the test watcher in an interactive mode.
+
+By default, runs tests related to files changed since the last commit.
+
+```
+npm test or yarn test
+
+```
+
+5- Builds the app for production to the build folder.
+
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+
+By default, it also includes a service worker so that your app loads from local cache on
+
+future visits.
+
+Your app is ready to be deployed.
+
+```
+npm run build or yarn build
+
+```
+
+source:
+
+```
+https://github.com/aamining/create-react-app
+
+```
+--------------------------------------------------------------------
+
+JUST to start this app (this repository app) need to "yarn start"
+
+--------------------------------------------------------------------
+
+
+# To install and create new react (manually):
 
 A complete step by step guide for creating a new Node app with React JS included
 
@@ -135,3 +198,39 @@ DOCTYPE, HEAD etc and paste following in to the <body> :
 The app should be ready to go:
 
 - yarn start
+
+------------------------------------------------------------------------------
+
+# more comments
+
+```
+https://reactjs.org/docs/installation.html
+
+```
+
+
+yarn add serve
+
+yarn serve (to run)
+
+chrome.google.com -> react developer tools
+
+yarn add webpack --dev
+
+yarn add babel-loader babel-core babel-preset-react-app --dev
+
+yarn add cross-env --dev
+
+yarn run build
+
+yarn add webpack-dev-server --dev
+
+yarn add react react-dom
+
+add following  code in to package.json or in to a hidden file called : .babelrc
+
+```
+ "babel": {
+  "presets": ["react-app"]
+
+```
