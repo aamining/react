@@ -51,6 +51,10 @@ my-app
 
 Open http://localhost:3000 to view it in the browser.
 
+Note that the development build is not optimized.
+
+To create a production build, use yarn build.
+
 ```
 npm start or yarn start
 
@@ -66,6 +70,8 @@ npm test or yarn test
 ```
 
 5- Builds the app for production to the build folder.
+
+Bundles the app into static files for production.
 
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
